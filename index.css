@@ -14,3 +14,35 @@ body {
 	margin-top: 20px;
 }
 
+.movies-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.movie {
+	width: 200px;
+	background-color: white;
+	
+}
+
+.movie > img {
+	height: 300px;
+}
+
+.movie > h5 {
+	display: inline-block;
+}
+
+.movie > span {
+	color: white;
+	background-color: gray;
+	display: inline-block;
+}
+
+.movie > button {
+	width: 50px;
+	height: 30px;	
+	color: white;
+	background-color: blue;
+}
