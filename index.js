@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return movieHTML;
     }
     
-    document.getElementById(‘myForm’).addEventListener(‘submit’, function(e){
+    document.getElementById(‘search-form’).addEventListener(‘submit’, function(e){
         e.preventDefault();
         document.querySelector(".movies-container").innerHTML = renderMovies(movieData);
     }
