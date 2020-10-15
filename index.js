@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     document.getElementById(‘myForm’).addEventListener(‘submit’, function(e){
+        e.preventDefault();
         document.querySelector(".movies-container").innerHTML = renderMovies(movieData);
     }
 })
