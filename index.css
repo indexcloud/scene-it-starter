@@ -16,28 +16,34 @@ body {
 
 .movies-container {
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .movie {
-	width: 200px;
 	background-color: white;
-	
+	flex-grow: 0 0 auto;
+	margin: 10px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .movie > img {
-	height: 300px;
+	
 }
 
 .movie > h5 {
-	display: inline-block;
+	width: 100%;
+	margin: 0 5px;
+	overflow: hidden;
 }
 
-.movie > span {
+.movie > h5 span {
 	color: white;
 	background-color: gray;
-	display: inline-block;
+	margin: 0 5px;
+	z-index: 1;
 }
 
 .movie > button {
@@ -45,4 +51,6 @@ body {
 	height: 30px;	
 	color: white;
 	background-color: blue;
+	margin-left: 5px;
+	margin-bottom: 5px;
 }
