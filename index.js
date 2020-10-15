@@ -14,5 +14,5 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById(‘search-form’).addEventListener(‘submit’, function(e){
         e.preventDefault();
         document.querySelector(".movies-container").innerHTML = renderMovies(movieData);
-    }
+    });
 })
