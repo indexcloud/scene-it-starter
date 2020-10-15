@@ -10,5 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
         `).join("")}`;
         return movieHTML;
     }
-    document.querySelector(".movies-container").innerHTML = renderMovies(movieData);
+    
+    document.getElementById(‘myForm’).addEventListener(‘submit’, function(e){
+        document.querySelector(".movies-container").innerHTML = renderMovies(movieData);
+    }
 })
