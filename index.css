@@ -46,9 +46,7 @@ body {
 	z-index: 1;
 }
 
-.movie > button {
-	width: 50px;
-	height: 30px;	
+.movie > button {	
 	color: white;
 	background-color: blue;
 	margin-left: 5px;
