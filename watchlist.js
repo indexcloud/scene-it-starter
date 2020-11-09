@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(watchlist);
     var movieHTML = `${watchlist.map(currentMovie => `
             <div class="movie">
-                <img src="${currentMovie.Poster}"><img>
+                <img src="${currentMovie.Poster}">
                 <h5>${currentMovie.Title}<span>${currentMovie.Year}</span></h5>
                 <button type="button" onclick="removeFromWatchlist('${currentMovie.imdbID}')">Remove!</button>
             </div>
@@ -29,4 +29,6 @@ function removeFromWatchlist(imdbID) {  // to remove movie from watchlist
 
     watchlistJSON = JSON.stringify(watchlist);
     localStorage.setItem("watchlist", watchlistJSON);
+
+    location.reload();
 };

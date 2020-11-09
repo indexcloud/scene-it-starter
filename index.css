@@ -27,10 +27,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 310px;
+	height: 520px;
 }
 
 .movie > img {
-	
+	height: 420px;
 }
 
 .movie > h5 {
